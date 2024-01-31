@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from "react";
+import Loading from "./components/Loading";
 import "./App.css";
 import "./Card.css";
 
 function App() {
   const [key, setKey] = useState([]);
   const [isValid, setIsValid] = useState(true);
+  const [isPressed, setIsPressed] = useState(false);
 
   useEffect(() => {
     const handleKeyPress = (event) => {
       console.log("Key pressed:", event);
       setKey(event);
       setIsValid(false);
+      setTimeout(() => {
+        setIsPressed(true);
+      }, 1000);
     };
 
     window.addEventListener("keydown", handleKeyPress);
@@ -22,20 +27,17 @@ function App() {
         <div className="menu">
           <div className="e-card playing">
             <div className="image"></div>
-
             <div className="wave"></div>
             <div className="wave"></div>
             <div className="wave"></div>
-            <h2>Bir Tuşa Basınız</h2>
+            <h2>Press Any Key</h2>
           </div>
         </div>
-      ) : (
-        // Content to be displayed when setIsValid is true
+      ) : isPressed ? (
         <>
           <div className="menu">
             <div className="e-card playing">
               <div className="image"></div>
-
               <div className="wave"></div>
               <div className="wave"></div>
               <div className="wave"></div>
@@ -45,7 +47,6 @@ function App() {
           <div className="menu-2">
             <div className="e-card playing">
               <div className="image"></div>
-
               <div className="wave"></div>
               <div className="wave"></div>
               <div className="wave"></div>
@@ -53,7 +54,6 @@ function App() {
             </div>
             <div className="e-card playing">
               <div className="image"> </div>
-
               <div className="wave"></div>
               <div className="wave"></div>
               <div className="wave"></div>
@@ -61,7 +61,6 @@ function App() {
             </div>
             <div className="e-card playing">
               <div className="image"></div>
-
               <div className="wave"></div>
               <div className="wave"></div>
               <div className="wave"></div>
@@ -69,7 +68,6 @@ function App() {
             </div>
             <div className="e-card playing">
               <div className="image"></div>
-
               <div className="wave"></div>
               <div className="wave"></div>
               <div className="wave"></div>
@@ -77,6 +75,8 @@ function App() {
             </div>
           </div>
         </>
+      ) : (
+        <Loading />
       )}
     </>
   );
