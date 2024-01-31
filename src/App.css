@@ -4,15 +4,6 @@
 .menu{display: flex;justify-content: center;}
 .menu-2{display: flex;gap:20px}
 .e-card.playing h2{position: absolute;top: 33%;left: 50%;transform: translate(-50%,-33%);text-transform: uppercase;text-align: center;}
-body{background-image: url(https://www.techpowerup.com/img/5Xvt6T2qFBioOiaO.jpg);background-size: cover;}
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, .4); 
-  z-index: 0;
-}
+body{}
+
 #root{z-index: 1;}
