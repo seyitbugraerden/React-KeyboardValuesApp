@@ -1,9 +1,4 @@
-#root {
-  margin: 0 auto;
-}
 .menu{display: flex;justify-content: center;}
 .menu-2{display: flex;gap:20px}
 .e-card.playing h2{position: absolute;top: 33%;left: 50%;transform: translate(-50%,-33%);text-transform: uppercase;text-align: center;}
-body{}
-
-#root{z-index: 1;}
+#root{z-index: 1;margin: 0 auto;}
