@@ -8,6 +8,7 @@ function App() {
   useEffect(() => {
     const handleKeyPress = (event) => {
       console.log("Key pressed:", event);
+      setKey(event);
     };
 
     window.addEventListener("keydown", handleKeyPress);
@@ -16,12 +17,47 @@ function App() {
   return (
     <>
       <div className="menu">
-        <div class="e-card playing">
-          <div class="image"></div>
+        <div className="e-card playing">
+          <div className="image"></div>
 
-          <div class="wave"></div>
-          <div class="wave"></div>
-          <div class="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <h2>{key.key}</h2>
+        </div>
+      </div>
+      <div className="menu-2">
+        <div className="e-card playing">
+          <div className="image"></div>
+
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <h2>{key.code}</h2>
+        </div>
+        <div className="e-card playing">
+          <div className="image"> </div>
+
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <h2>{key.keyCode}</h2>
+        </div>
+        <div className="e-card playing">
+          <div className="image"></div>
+
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <h2>{key.type}</h2>
+        </div>
+        <div className="e-card playing">
+          <div className="image"></div>
+
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <h2>{key.location === 0 ? "General Keyboard" : ""}</h2>
         </div>
       </div>
     </>
