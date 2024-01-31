@@ -78,6 +78,17 @@ function App() {
       ) : (
         <Loading />
       )}
+      <p
+        style={{
+          position: "absolute",
+          bottom: "0",
+          left: "0",
+          color: "rgb(255,255,255,.5)",
+        }}
+      >
+        You can press any key you want and you can see the result and infos
+        about your key
+      </p>
     </>
   );
 }
