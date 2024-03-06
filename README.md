@@ -1,8 +1,5 @@
-# React + Vite
+<h2>React | PrimeReact | Axios | KeyValue API | Simple Key Information</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![FireShot Capture 028 - React KeyCode Update - localhost](https://github.com/seyitbugraerden/React-KeyboardValuesApp/assets/154025499/dd9832a9-5304-49e9-a757-30b4b29899e0)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![FireShot Capture 029 - React KeyCode Update - localhost](https://github.com/seyitbugraerden/React-KeyboardValuesApp/assets/154025499/30a361a0-3324-47ef-be19-1fe5804f3678)
